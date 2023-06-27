@@ -1,0 +1,19 @@
+{
+  "name": "@nunogois/unleash-analytics-ga",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Google Analytics plugin for Unleash",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nunogois/unleash-analytics-ga.git"
+  },
+  "devDependencies": {
+    "@types/gtag.js": "^0.0.12",
+    "typescript": "^5.1.3"
+  }
+}
