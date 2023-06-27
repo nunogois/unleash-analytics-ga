@@ -32,15 +32,15 @@ For example if you have an `index.html` file in your project, this means adding 
 Install the plugin:
 
 ```bash
-npm install unleash-analytics-ga
+npm install @nunogois/unleash-analytics-ga
 
 # or using yarn
 
-yarn add unleash-analytics-ga
+yarn add @nunogois/unleash-analytics-ga
 
 # or using pnpm
 
-pnpm i unleash-analytics-ga
+pnpm i @nunogois/unleash-analytics-ga
 ```
 
 Add the plugin to your Unleash client.
