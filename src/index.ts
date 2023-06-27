@@ -8,7 +8,7 @@ export interface IUnleashImpressionEvent {
 
 export const sendImpression = (event: IUnleashImpressionEvent) => {
   if ('gtag' in window) {
-    const { context, featureName, ...rest } = event
+    const { context, ...rest } = event
     const data = new Map<string, any>(Object.entries(rest))
 
     Object.entries(context).forEach(([key, value]) => {
@@ -16,8 +16,6 @@ export const sendImpression = (event: IUnleashImpressionEvent) => {
         data.set(`context_${key}`, value)
       }
     })
-
-    data.set('featureName', featureName)
 
     window.gtag('event', 'unleash', Object.fromEntries(data))
   } else {
